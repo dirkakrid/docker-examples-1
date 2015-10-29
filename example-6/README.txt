@@ -6,6 +6,8 @@ docker run --rm -p 8000:8000 example-6
 docker run --rm -p 8000:8000 -u 33 example-6
 docker run --rm -p 8000:8000 -u 10000 example-6
 
+docker run -it --rm -p 8000:8000 -u 10000 example-6 bash
+
 curl -v http://docker-host:8000
 
 OpenShift:

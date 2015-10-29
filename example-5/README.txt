@@ -4,6 +4,7 @@ docker build -t example-5 .
 docker run --rm -p 8000:80 example-5
 
 docker run --rm -p 8000:80 -u 33 example-5
+docker run --rm -p 8000:80 -u 10000 example-5
 
 curl -v http://docker-host:8000
 

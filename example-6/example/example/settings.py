@@ -80,9 +80,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-if os.environ.get('APP_TEMPDIR'):
-    STATIC_ROOT = os.path.join(os.environ['APP_TEMPDIR'], 'htdocs')
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'htdocs')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'htdocs')
 STATIC_URL = '/static/'

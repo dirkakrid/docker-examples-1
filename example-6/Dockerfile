@@ -20,6 +20,8 @@ RUN python example/manage.py collectstatic --noinput
 
 USER www-data
 
+EXPOSE 8000
+
 CMD [ "mod_wsgi-express", "start-server", \
       "--log-to-terminal", "--processes", "5", "--threads", "3", \
       "--working-directory", "example", \
